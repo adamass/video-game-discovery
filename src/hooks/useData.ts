@@ -12,7 +12,7 @@ const useData
  = <T>(endpoint: string) => {
     const [data, setData] = useState<T[]>([]);
     const [error, setError] = useState("");
-    const [isLoding, setLoading] = useState(false);
+    const [isLoading, setLoading] = useState(false);
   
     useEffect(() => {
         const controller = new AbortController();
@@ -33,7 +33,7 @@ const useData
         return () => controller.abort();
     }, []);
 
-    return {data, error, isLoding};
+    return {data, error, isLoading};
 }
 
 export default useData;
