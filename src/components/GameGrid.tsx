@@ -4,6 +4,7 @@ import GameCard from "./GameCard";
 import { GameCardSkeleton } from "./GameCardSkeleton";
 import GameCardContainer from "./GameCardContainer";
 import { Genre } from "../hooks/useGenres";
+import PlatformSelector from "./PlatformSelector";
 
 interface Props {
   selectedGenre: Genre | null;
