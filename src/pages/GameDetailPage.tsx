@@ -4,8 +4,8 @@ import useGame from "../hooks/useGame";
 import { Heading, Spinner, Text } from "@chakra-ui/react";
 
 const GameDetailPage = () => {
-  const { id } = useParams();
-  const { data: game, isLoading, error } = useGame(id!);
+  const { slug } = useParams();
+  const { data: game, isLoading, error } = useGame(slug!);
 
   if (isLoading) return <Spinner />;
 
